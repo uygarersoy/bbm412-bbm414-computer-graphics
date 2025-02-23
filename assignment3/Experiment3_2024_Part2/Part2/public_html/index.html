@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Assignment3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+            }
+
+            .canvas-container {
+                margin: 20px;
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                margin: 20px;
+            }
+
+            .button-group {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            canvas {
+                display: block;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="canvas-container">
+            <canvas id="glCanvas" width="640" height="640"></canvas>
+        </div>
+        <div class="button-container">
+            <div class="button-group">
+                <input type="color" id="colorPicker" value="#000000">
+                <button id="Draw">Draw</button>
+                <button id="Clear">Clear</button>
+            </div>
+            <div class="button-group">
+                <button id="Right">Right</button>
+                <button id="Left">Left</button>
+                <button id="Up">Up</button>
+                <button id="Down">Down</button>
+            </div>
+            <div class="button-group">
+                <button id="Clockwise">Clockwise</button>
+                <button id="Counterclockwise">Counterclockwise</button>
+            </div>
+            <div class="button-group">
+                <label for="scaleInput">Scale</label>
+                <input type="range" id="scaleInput" min="0.1" max="2" step="0.1" value="1">
+            </div>
+            <div class="button-group">
+                <button id="Fill">Fill</button>
+            </div>
+        </div>
+        <script src="js/shaders.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
