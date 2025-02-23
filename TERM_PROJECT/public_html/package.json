@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "gl-matrix": "^3.4.3",
+    "three": "^0.172.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.7"
+  }
+}

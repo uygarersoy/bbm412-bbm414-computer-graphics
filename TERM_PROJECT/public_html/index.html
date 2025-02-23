@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wave Simulation: Surf the Ocean Currents</title>
+	<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div id="controls">
+		<div id="score">Score: 0</div>
+		<label for="waveHeightSlider">Wave Height:</label>
+		<input type="range" id="waveHeightSlider" min="0" max="30" value="10" step="1">
+		<span id="waveHeightValue">10</span>
+	
+		<label for="waveFrequencySlider">Wave Frequency:</label>
+		<input type="range" id="waveFrequencySlider" min="1" max="10" value="5" step="1">
+		<span id="waveFrequencyValue">5</span>
+	
+		<label for="waveSpeedSlider">Wind Speed:</label>
+		<input type="range" id="waveSpeedSlider" min="0.5" max="10" value="2" step="0.5">
+		<span id="waveSpeedValue">2</span>
+	</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

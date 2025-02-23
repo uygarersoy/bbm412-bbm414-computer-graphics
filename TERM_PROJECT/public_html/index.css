@@ -1,0 +1,38 @@
+#controls {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#controls label {
+    color: white;
+    font-size: 14px;
+    flex-basis: 100px; 
+}
+
+#controls input[type="range"] {
+    width: 200px; 
+}
+
+#controls span {
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#score {
+    font-size: 14px;
+    color: white;
+}
+
+body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+    }
